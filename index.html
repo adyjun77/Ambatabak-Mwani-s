@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ambatabak Mwani's</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav>
+
+    <div class="logo">
+        <img src="image/logo_baru-removebg-preview.png" alt="Logo">
+        <h2>Ambatabak Mwani's</h2>
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </div>
+
+    <ul id="navMenu">
+
+        <li>
+            <a href="#home">
+                <i class="bi bi-house-door"></i>
+                Rumah
+            </a>
+        </li>
+
+        <li>
+            <a href="#menu">
+                <i class="bi bi-grid"></i>
+                Menu
+            </a>
+        </li>
+
+        <li>
+            <a href="#pesan">
+                <i class="bi bi-cart"></i>
+                Pesan
+            </a>
+        </li>
+
+        <li>
+            <a href="#tracking">
+                <i class="bi bi-search"></i>
+                Tracking
+            </a>
+        </li>
+
+        <li>
+            <a href="#tentang">
+                <i class="bi bi-info-circle"></i>
+                Tentang
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+
+<!-- ================= HOME ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <h1>Ambatabak Mwani's</h1>
+
+        <p>
+            Nikmati kelezatan martabak favorit Anda dengan sistem tracking pesanan yang mudah dan cepat.
+        </p>
+
+        <a href="#menu" class="btn">
+            Lihat Menu
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ================= MENU ================= -->
+
+<section id="menu">
+
+    <h2 class="judul">
+        Menu Martabak
+    </h2>
+
+    <div class="menu-container">
+
+        <div class="card">
+            <img src="image/Martabak Coklat.jpeg">
+            <h3>Martabak Coklat</h3>
+            <p>Rp 15.000</p>
+        </div>
+
+        <div class="card">
+            <img src="image/Martabak Keju.jpeg">
+            <h3>Martabak Keju</h3>
+            <p>Rp 15.000</p>
+        </div>
+
+        <div class="card">
+            <img src="image/Martabak hijau pandan.jpeg">
+            <h3>Martabak Hijau Pandan</h3>
+            <p>Rp 15.000</p>
+        </div>
+
+        <div class="card">
+            <img src="image/Martabak kacang.jpeg">
+            <h3>Martabak Kacang</h3>
+            <p>Rp 15.000</p>
+        </div>
+
+        <div class="card">
+            <img src="image/Martabak black forest.jpeg">
+            <h3>Martabak Black Forest</h3>
+            <p>Rp 15.000</p>
+        </div>
+
+        <div class="card">
+            <img src="image/Martbak red velvet.jpeg">
+            <h3>Martabak Red Velvet</h3>
+            <p>Rp 15.000</p>
+        </div>
+
+        <div class="card">
+            <img src="image/Martabak telur.jpeg">
+            <h3>Martabak Telur</h3>
+            <p>Rp 35.000</p>
+        </div>
+
+        <div class="card">
+            <img src="image/Martabak tahu.jpeg">
+            <h3>Martabak Tahu</h3>
+            <p>Rp 20.000</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FORM PEMESANAN ================= -->
+
+<section id="pesan">
+
+    <h2 class="judul">
+        Form Pemesanan
+    </h2>
+
+    <p class="sub-judul">
+        Isi data berikut untuk melakukan pemesanan martabak.
+    </p>
+
+    <div class="pesan-box">
+
+        <!-- Data Pelanggan -->
+        <h3>
+            <i class="bi bi-person"></i>
+            Data Pelanggan
+        </h3>
+
+        <div class="input-group">
+
+            <div class="input-box">
+                <label>Nama Lengkap *</label>
+                <input
+                    type="text"
+                    id="nama"
+                    placeholder="Masukkan nama lengkap"
+                    required>
+            </div>
+
+            <div class="input-box">
+                <label>No. Telepon *</label>
+                <input
+                    type="text"
+                    id="telepon"
+                    placeholder="08xxxxxxxxxx"
+                    required>
+            </div>
+
+        </div>
+
+        <!-- Detail Pesanan -->
+        <h3>
+            <i class="bi bi-cart"></i>
+            Detail Pesanan
+        </h3>
+
+        <div class="input-group">
+
+            <div class="input-box">
+
+                <label>Pilih Menu *</label>
+
+                <select id="menuMartabak">
+
+                    <option value="">-- Pilih Menu --</option>
+
+                    <option>Martabak Coklat</option>
+
+                    <option>Martabak Keju</option>
+
+                    <option>Martabak Hijau Pandan</option>
+
+                    <option>Martabak Kacang</option>
+
+                    <option>Martabak Black Forest</option>
+
+                    <option>Martabak Red Velvet</option>
+
+                    <option>Martabak Telur</option>
+
+                    <option>Martabak Tahu</option>
+
+                </select>
+
+            </div>
+
+            <div class="input-box kecil">
+
+                <label>Jumlah *</label>
+
+                <input
+                    type="number"
+                    id="jumlah"
+                    value="1"
+                    min="1">
+
+            </div>
+
+        </div>
+
+        <div class="input-box">
+
+            <label>Catatan (Opsional)</label>
+
+            <textarea
+                id="catatan"
+                placeholder="Contoh : Jangan terlalu manis"></textarea>
+
+        </div>
+
+        <!-- Ringkasan -->
+        <div class="ringkasan">
+
+            <h3>
+
+                <i class="bi bi-receipt"></i>
+
+                Ringkasan Pesanan
+
+            </h3>
+
+            <p>
+                <strong>Menu :</strong>
+                <span id="ringMenu">-</span>
+            </p>
+
+            <p>
+                <strong>Jumlah :</strong>
+                <span id="ringJumlah">0</span>
+            </p>
+
+            <p>
+                <strong>Total :</strong>
+                <span id="ringTotal">Rp0</span>
+            </p>
+
+        </div>
+
+        <button
+            type="button"
+            class="btn-pesan"
+            onclick="buatPesanan()">
+
+            <i class="bi bi-cart-check-fill"></i>
+
+            Buat Pesanan
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= TRACKING ================= -->
+
+<section id="tracking">
+
+    <h2 class="judul">
+        Status Pesanan
+    </h2>
+
+    <div class="tracking-box">
+
+        <div class="status-badge" id="badgeStatus">
+            MENUNGGU
+        </div>
+
+        <div class="timeline">
+
+            <div class="step active" id="step1">
+                <div class="circle">
+                    <i class="bi bi-hourglass-split"></i>
+                </div>
+                <span>Menunggu</span>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step" id="step2">
+                <div class="circle">
+                    <i class="bi bi-gear-fill"></i>
+                </div>
+                <span>Diproses</span>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step" id="step3">
+                <div class="circle">
+                    <i class="bi bi-truck"></i>
+                </div>
+                <span>Diantar</span>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step" id="step4">
+                <div class="circle">
+                    <i class="bi bi-check-circle-fill"></i>
+                </div>
+                <span>Selesai</span>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="detail-grid">
+
+            <div class="detail-card">
+
+                <h3>📋 Detail Pesanan</h3>
+
+                <p>Kode : <span id="nomorPesanan">-</span></p>
+
+                <p>Menu : <span id="namaMenu">-</span></p>
+
+                <p>Jumlah : <span id="trackingJumlah">0</span></p>
+
+                <p>Total : <span id="trackingTotal">Rp0</span></p>
+
+            </div>
+
+            <div class="detail-card">
+
+                <h3>👤 Data Pelanggan</h3>
+
+                <p>Nama : <span id="trackingNama">-</span></p>
+
+                <p>Telepon : <span id="trackingTelepon">-</span></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= TENTANG ================= -->
+
+<section id="tentang">
+
+    <h2 class="judul">
+        Tentang Kami
+    </h2>
+
+    <div class="tentang-container">
+
+        <div class="tentang-kiri">
+
+            <img src="image/Martabak telur.jpeg" alt="Martabak Premium">
+
+            <div class="badge">
+                ⭐ Premium Quality
+            </div>
+
+        </div>
+
+        <div class="tentang-kanan">
+
+            <h3>Martabak Berkualitas Premium</h3>
+
+            <p>
+                Ambatabak Mwani's menghadirkan martabak dengan cita rasa terbaik
+                menggunakan bahan-bahan pilihan yang selalu segar.
+                Setiap pesanan dibuat setelah pelanggan melakukan pemesanan
+                sehingga kualitas, rasa, dan kehangatan martabak tetap terjaga.
+            </p>
+
+            <div class="fitur">
+
+                <div>
+                    <i class="bi bi-check-circle-fill"></i>
+                    Bahan berkualitas premium
+                </div>
+
+                <div>
+                    <i class="bi bi-check-circle-fill"></i>
+                    Dibuat setelah dipesan
+                </div>
+
+                <div>
+                    <i class="bi bi-check-circle-fill"></i>
+                    Higienis & Bersih
+                </div>
+
+                <div>
+                    <i class="bi bi-check-circle-fill"></i>
+                    Harga Terjangkau
+                </div>
+
+                <div>
+                    <i class="bi bi-check-circle-fill"></i>
+                    Tracking Pesanan Real-Time
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <h3>Ambatabak Mwani's</h3>
+
+    <p>Jl. Anggrek Mekar Pontianak No.48 Ngawi</p>
+
+    <p>WhatsApp : 999 pemain neobeast</p>
+
+    <p>&copy; 2026 Ambatabak Mwani's</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
